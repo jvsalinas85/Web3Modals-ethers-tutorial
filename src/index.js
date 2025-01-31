@@ -21,6 +21,14 @@ const metadata = {
   icons: ['https://assets.reown.com/reown-profile-pic.png']
 }
 
+const sepoliacustom = {
+  chainId: 11155111,
+  name: 'Sepolia',
+  currency: 'ETH',
+  explorerUrl: 'https://sepolia.etherscan.io',
+  rpcUrl: 'https://go.getblock.io/2a342d0854e14be5937848128e648ed8'
+}
+
 // 4. Create a AppKit instance
 createAppKit({
   adapters: [new EthersAdapter()],
@@ -29,7 +37,8 @@ createAppKit({
   projectId,
   features: {
     analytics: true // Optional - defaults to your Cloud configuration
-  }
+  },
+  defaultNetwork: sepoliacustom,
 })
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
