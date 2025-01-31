@@ -3,23 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { ChakraProvider } from '@chakra-ui/react';
-
 import { createAppKit } from '@reown/appkit/react'
 import { EthersAdapter } from '@reown/appkit-adapter-ethers'
-import { arbitrum, mainnet } from '@reown/appkit/networks'
+import { sepolia } from '@reown/appkit/networks'
 
 // 1. Get projectId
-const projectId = 'YOUR_PROJECT_ID'
+const projectId = process.env.REACT_APP_WEB3MODAL_PROJECTID || "YOUR_PROJECT_ID";
 
 // 2. Set the networks
-const networks = [arbitrum, mainnet]
+const networks = [sepolia]
 
 // 3. Create a metadata object - optional
 const metadata = {
-  name: 'My Website',
-  description: 'My Website description',
-  url: 'https://mywebsite.com', // origin must match your domain & subdomain
-  icons: ['https://avatars.mywebsite.com/']
+  name: 'Web3Modal Ethers',
+  description: 'AppKit Example',
+  url: 'https://reown.com/appkit', // origin must match your domain & subdomain
+  icons: ['https://assets.reown.com/reown-profile-pic.png']
 }
 
 // 4. Create a AppKit instance
