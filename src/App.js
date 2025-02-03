@@ -1,10 +1,13 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { useAppKitAccount } from "@reown/appkit/react";
+import { useAppKitNetwork } from "@reown/appkit/react";
 import { ethers } from "ethers";
 import { useState, useEffect } from "react";
+import HeaderComponent from "./components/HeaderComponent";
 
 function App() {
   const { address, isConnected, embeddedWalletInfo } = useAppKitAccount();
+  const {chainId} = useAppKitNetwork();
   
   console.log("Address:", address);
   console.log("Is Connected?:", isConnected);
@@ -74,12 +77,32 @@ function App() {
           <appkit-connect-button label="Connect" size="md"></appkit-connect-button>
         </Flex>
       ) : (
-        <Box>
-          <p>Balance: {infoAccount.balance} ETH</p>
-        </Box>
+        <>
+          <HeaderComponent/>
+          <Flex gap={4} p={4}>
+            <Text color={'white'} fontSize={'xl'}>
+              Address: {address}
+            </Text>
+            {infoAccount.balance && (
+              <>
+                <Text color={'white'} fontSize={'xl'}>
+                  Balance: {infoAccount.balance}
+                </Text>
+                <Text color={'white'} fontSize={'xl'}>
+                  Symbol: ETH
+                </Text>
+              </>
+            )}
+            <Text color={'white'} fontSize={'xl'}>
+                Chain ID: {chainId}
+            </Text>
+          </Flex>
+        </>
       )}
     </Box>
   );
 }
 
 export default App;
+    
+
