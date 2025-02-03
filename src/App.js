@@ -5,6 +5,8 @@ import { ethers } from "ethers";
 import { useState, useEffect } from "react";
 import HeaderComponent from "./components/HeaderComponent";
 import SendTransactionComponent from "./components/SendTransactionComponent";
+import SignMessageComponent from "./components/SignMessageComponent";
+import VerifyMessageComponent from "./components/VerifyMessageComponent";
 
 function App() {
   const { address, isConnected, embeddedWalletInfo } = useAppKitAccount();
@@ -99,6 +101,10 @@ function App() {
             </Text>
           </Flex>
           <SendTransactionComponent infoAccount={infoAccount} setNeedRefresh={setNeedRefresh} />
+          <Flex gap={4}>
+            <SignMessageComponent infoAccount={infoAccount}/>
+            <VerifyMessageComponent />
+          </Flex>
         </>
       )}
     </Box>
