@@ -4,6 +4,7 @@ import { useAppKitNetwork } from "@reown/appkit/react";
 import { ethers } from "ethers";
 import { useState, useEffect } from "react";
 import HeaderComponent from "./components/HeaderComponent";
+import SendTransactionComponent from "./components/SendTransactionComponent";
 
 function App() {
   const { address, isConnected, embeddedWalletInfo } = useAppKitAccount();
@@ -97,6 +98,7 @@ function App() {
                 Chain ID: {chainId}
             </Text>
           </Flex>
+          <SendTransactionComponent infoAccount={infoAccount} setNeedRefresh={setNeedRefresh} />
         </>
       )}
     </Box>
