@@ -1,6 +1,6 @@
 # 🚀 Proyecto Web3 con Web3Modal y Ethers
 
-Este es un proyecto tutorial simple en el que se utiliza **Web3Modal** con **ethers.js** para enviar transacciones en la red **Sepolia**. El frontend está construido con **React** (creado con `npx create-react-app`) y utiliza **Chakra UI** para los componentes.
+Este es un proyecto tutorial simple en el que se utiliza **Web3Modal** con **ethers.js** para enviar transacciones en la red **Sepolia**. El frontend está construido con **React** (creado con `npx create-react-app`) y utiliza **Chakra UI** para los componentes. Se agregó el poder firmar mensajes y verificar los mensajes.
 
 ## 📌 Tecnologías utilizadas
 - ⚛️ **React**
@@ -44,7 +44,7 @@ Para más detalles sobre Reown AppKit, consulta la [documentación oficial](http
 
 # 🚀 Web3 Project with Web3Modal and Ethers
 
-This is a simple tutorial project that uses **Web3Modal** with **ethers.js** to send transactions on the **Sepolia** network. The frontend is built with **React** (created with `npx create-react-app`) and uses **Chakra UI** for components.
+This is a simple tutorial project that uses **Web3Modal** with **ethers.js** to send transactions on the **Sepolia** network. The frontend is built with **React** (created with `npx create-react-app`) and uses **Chakra UI** for components. Now you can sign messages and verify them on the same app.
 
 ## 📌 Technologies Used
 - ⚛️ **React**
