@@ -72,7 +72,7 @@ This is a simple tutorial project that allows connecting a Web3 wallet and sendi
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/repository-name.git
+   git clone https://github.com/jvsalinas85/Web3Modals-ethers-tutorial.git
    cd repository-name
    ```
 
