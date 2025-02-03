@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 📌 Proyecto Web3 con React y Chakra UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un proyecto tutorial simple que permite conectar una billetera Web3 y enviar transacciones en la red **Sepolia**. Se utilizó **Web3Modal con ethers.js** y el paquete **AppKit de Reown** para manejar la autenticación y las transacciones de Ethereum. Para el front-end, se utilizó **React con Create React App** y **Chakra UI** para los componentes estilizados.
 
-## Available Scripts
+## 🚀 Tecnologías utilizadas
 
-In the project directory, you can run:
+- ⚛️ **React** (con Create React App)
+- 🎨 **Chakra UI** (para diseño de componentes)
+- 🌐 **Ethers.js** (para interactuar con Ethereum)
+- 🔗 **Web3Modal** (mediante AppKit de Reown)
+- 🔧 **Reown AppKit** (para la conexión con Web3Modal y ethers.js)
 
-### `npm start`
+## 📦 Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clona este repositorio:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/jvsalinas85/Web3Modals-ethers-tutorial.git
+   cd nombre-del-repo
+   ```
 
-### `npm test`
+2. Instala las dependencias necesarias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   yarn install
+   ```
 
-### `npm run build`
+3. Instala Web3Modal con AppKit y ethers.js:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   yarn add @reown/appkit @reown/appkit-adapter-ethers ethers
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Ejecuta la aplicación en modo desarrollo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   yarn start
+   ```
 
-### `npm run eject`
+## 🎯 Características principales
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Conexión de billeteras Web3 (MetaMask, WalletConnect, etc.)
+- Envío de transacciones en **Sepolia**
+- Interfaz estilizada con **Chakra UI**
+- Uso de **ethers.js** para firmar y enviar transacciones
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📖 Documentación
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para más información sobre **Reown AppKit**, visita:
+👉 [Documentación oficial de Reown](https://docs.reown.com/appkit/react/core/installation)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📝 Licencia
 
-## Learn More
+Este proyecto está bajo la licencia **MIT**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# 📌 Web3 Project with React and Chakra UI
 
-### Code Splitting
+This is a simple tutorial project that allows connecting a Web3 wallet and sending transactions on the **Sepolia** network. It uses **Web3Modal with ethers.js** and the **Reown AppKit** package to handle authentication and Ethereum transactions. For the front-end, **React with Create React App** and **Chakra UI** were used for styled components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🚀 Technologies Used
 
-### Analyzing the Bundle Size
+- ⚛️ **React** (with Create React App)
+- 🎨 **Chakra UI** (for component styling)
+- 🌐 **Ethers.js** (to interact with Ethereum)
+- 🔗 **Web3Modal** (via Reown AppKit)
+- 🔧 **Reown AppKit** (to connect Web3Modal with ethers.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📦 Installation
 
-### Making a Progressive Web App
+1. Clone this repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   git clone https://github.com/yourusername/repository-name.git
+   cd repository-name
+   ```
 
-### Advanced Configuration
+2. Install required dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   yarn install
+   ```
 
-### Deployment
+3. Install Web3Modal with AppKit and ethers.js:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   ```bash
+   yarn add @reown/appkit @reown/appkit-adapter-ethers ethers
+   ```
 
-### `npm run build` fails to minify
+4. Run the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   yarn start
+   ```
+
+## 🎯 Main Features
+
+- Web3 wallet connection (MetaMask, WalletConnect, etc.)
+- Send transactions on **Sepolia**
+- UI styled with **Chakra UI**
+- Uses **ethers.js** to sign and send transactions
+
+## 📖 Documentation
+
+For more information about **Reown AppKit**, visit:
+👉 [Reown Official Documentation](https://docs.reown.com/appkit/react/core/installation)
+
+## 📝 License
+
+This project is licensed under the **MIT** License.
