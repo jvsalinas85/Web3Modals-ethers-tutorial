@@ -1,111 +1,85 @@
-# 📌 Proyecto Web3 con React y Chakra UI
+# 🚀 Proyecto Web3 con Web3Modal y Ethers
 
-Este es un proyecto tutorial simple que permite conectar una billetera Web3 y enviar transacciones en la red **Sepolia**. Se utilizó **Web3Modal con ethers.js** y el paquete **AppKit de Reown** para manejar la autenticación y las transacciones de Ethereum. Para el front-end, se utilizó **React con Create React App** y **Chakra UI** para los componentes estilizados.
+Este es un proyecto tutorial simple en el que se utiliza **Web3Modal** con **ethers.js** para enviar transacciones en la red **Sepolia**. El frontend está construido con **React** (creado con `npx create-react-app`) y utiliza **Chakra UI** para los componentes.
 
-## 🚀 Tecnologías utilizadas
+## 📌 Tecnologías utilizadas
+- ⚛️ **React**
+- 🌐 **Ethers.js**
+- 🔗 **Web3Modal** (a través de Reown AppKit)
+- 🎨 **Chakra UI**
 
-- ⚛️ **React** (con Create React App)
-- 🎨 **Chakra UI** (para diseño de componentes)
-- 🌐 **Ethers.js** (para interactuar con Ethereum)
-- 🔗 **Web3Modal** (mediante AppKit de Reown)
-- 🔧 **Reown AppKit** (para la conexión con Web3Modal y ethers.js)
-
-## 📦 Instalación
-
+## 📜 Instalación
 1. Clona este repositorio:
-
    ```bash
    git clone https://github.com/jvsalinas85/Web3Modals-ethers-tutorial.git
-   cd nombre-del-repo
+   cd tu-repositorio
    ```
 
 2. Instala las dependencias necesarias:
-
    ```bash
    yarn install
    ```
 
-3. Instala Web3Modal con AppKit y ethers.js:
-
+3. Agrega las librerías de Web3Modal y Ethers:
    ```bash
    yarn add @reown/appkit @reown/appkit-adapter-ethers ethers
    ```
 
-4. Ejecuta la aplicación en modo desarrollo:
+4. **Configura el archivo `.env`**
+   - Crea una cuenta en [Reown Cloud](https://cloud.reown.com/) y genera un **Project ID**.
+   - En la raíz del proyecto, crea un archivo `.env` con el siguiente contenido:
+     ```env
+     REACT_APP_WEB3MODAL_PROJECTID=tu_project_id
+     ```
 
+5. Inicia el servidor de desarrollo:
    ```bash
    yarn start
    ```
 
-## 🎯 Características principales
-
-- Conexión de billeteras Web3 (MetaMask, WalletConnect, etc.)
-- Envío de transacciones en **Sepolia**
-- Interfaz estilizada con **Chakra UI**
-- Uso de **ethers.js** para firmar y enviar transacciones
-
-## 📖 Documentación
-
-Para más información sobre **Reown AppKit**, visita:
-👉 [Documentación oficial de Reown](https://docs.reown.com/appkit/react/core/installation)
-
-## 📝 Licencia
-
-Este proyecto está bajo la licencia **MIT**.
+## 📄 Documentación
+Para más detalles sobre Reown AppKit, consulta la [documentación oficial](https://docs.reown.com/appkit/react/core/installation).
 
 ---
 
-# 📌 Web3 Project with React and Chakra UI
+# 🚀 Web3 Project with Web3Modal and Ethers
 
-This is a simple tutorial project that allows connecting a Web3 wallet and sending transactions on the **Sepolia** network. It uses **Web3Modal with ethers.js** and the **Reown AppKit** package to handle authentication and Ethereum transactions. For the front-end, **React with Create React App** and **Chakra UI** were used for styled components.
+This is a simple tutorial project that uses **Web3Modal** with **ethers.js** to send transactions on the **Sepolia** network. The frontend is built with **React** (created with `npx create-react-app`) and uses **Chakra UI** for components.
 
-## 🚀 Technologies Used
-
-- ⚛️ **React** (with Create React App)
-- 🎨 **Chakra UI** (for component styling)
-- 🌐 **Ethers.js** (to interact with Ethereum)
+## 📌 Technologies Used
+- ⚛️ **React**
+- 🌐 **Ethers.js**
 - 🔗 **Web3Modal** (via Reown AppKit)
-- 🔧 **Reown AppKit** (to connect Web3Modal with ethers.js)
+- 🎨 **Chakra UI**
 
-## 📦 Installation
-
+## 📜 Installation
 1. Clone this repository:
-
    ```bash
    git clone https://github.com/jvsalinas85/Web3Modals-ethers-tutorial.git
-   cd repository-name
+   cd your-repository
    ```
 
-2. Install required dependencies:
-
+2. Install the required dependencies:
    ```bash
    yarn install
    ```
 
-3. Install Web3Modal with AppKit and ethers.js:
-
+3. Add Web3Modal and Ethers libraries:
    ```bash
    yarn add @reown/appkit @reown/appkit-adapter-ethers ethers
    ```
 
-4. Run the development server:
+4. **Set up the `.env` file**
+   - Create an account on [Reown Cloud](https://cloud.reown.com/) and generate a **Project ID**.
+   - In the project's root directory, create a `.env` file with the following content:
+     ```env
+     REACT_APP_WEB3MODAL_PROJECTID=your_project_id
+     ```
 
+5. Start the development server:
    ```bash
    yarn start
    ```
 
-## 🎯 Main Features
-
-- Web3 wallet connection (MetaMask, WalletConnect, etc.)
-- Send transactions on **Sepolia**
-- UI styled with **Chakra UI**
-- Uses **ethers.js** to sign and send transactions
-
-## 📖 Documentation
-
-For more information about **Reown AppKit**, visit:
-👉 [Reown Official Documentation](https://docs.reown.com/appkit/react/core/installation)
-
-## 📝 License
-
-This project is licensed under the **MIT** License.
+## 📄 Documentation
+For more details on Reown AppKit, check the [official documentation](https://docs.reown.com/appkit/react/core/installation).
